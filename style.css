@@ -1,0 +1,171 @@
+:root{
+    --Very_Dark_Blue: hsl(234, 12%, 34%);
+    --Grayish_Blue: hsl(229, 6%, 66%);
+    --Very_Light_Gray: hsl(0, 0%, 98%);
+    --Redd: hsl(0, 78%, 62%)
+    --Cyann: hsl(180, 62%, 55%)
+    --Orangee: hsl(34, 97%, 64%)
+    --Bluee: hsl(212, 86%, 64%)
+}
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: hsla(229, 6%, 66%, 0.048);
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 100vh;
+    padding: 3% 5% 2% 5%;
+}
+.box-container{
+    width: 100%;
+    height: 87%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100%;
+    grid-gap: 10px;
+}
+.text-area{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text-area p{
+    font-size: 25px;
+    font-weight: 100;
+    color: var(--Grayish_Blue);
+    margin-bottom: 7px;
+}
+.text-area h3{
+   font-weight: bold;
+   font-size: 23px; 
+   margin-bottom: 7px;
+}
+.text-area small{
+    color: var(--Grayish_Blue);
+}
+/**Common Classer----------------------------------------------------*/
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 2px;
+    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.175);
+    background-color: white;
+
+}
+.box-text{
+    width: 90%;
+    margin: auto;
+}
+.box-text h4{
+    margin-bottom: 12px;
+}
+.box-text p{
+    font-size: 12px;
+    color: var(--Grayish_Blue);
+}
+.box-img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 7px;
+}
+.box-img img{
+    width: 35px;
+}
+.box-2{
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: center
+}
+#supervisor{
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+#team-builder{    
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+.blue{
+    border-top: blue;
+}
+@media screen and (max-width: 920px){
+    .container{
+        height: min-content;
+    }
+    .text-area p{
+        font-size: 15px;
+    }
+    .text-area h3{
+        font-size: 20px;
+        color: hsl(0, 0%, 27%);
+    }
+    .box-2{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        align-self: center
+      }
+      #teambuilder{
+        margin-bottom: 17px;
+    }
+    #karma{
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        height: min-content;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .text-area p{
+        font-size: 15px;
+    }
+    .text-area h3{
+        font-size: 18px;
+        color: hsl(0, 0%, 27%);
+    }
+    .box-container{
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-columns: 100%;
+        grid-gap: 15px;
+    }
+    .box{
+        box-shadow: 0px 7px 8px hsla(229, 6%, 66%, 0.586) ;
+    }
+    .box-2{
+        height: min-content;
+    }
+    #teambuilder{
+        margin-bottom: 17px;
+    }
+    #karma{
+        margin-top: 12px;
+    }
+}
